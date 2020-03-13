@@ -40,7 +40,7 @@ $cervezas = json_decode($response);
       <?php else: ?>
         <button class="btn btn-secondary" disabled>Anterior</button>
       <?php endif; ?>
-      <button class="btn btn-success"><?= htmlspecialchars($cervezas->currentPage) ?></button>
+      <button class="btn btn-success" disabled><?= htmlspecialchars($cervezas->currentPage) ?></button>
       <?php if ($cervezas->currentPage < $cervezas->numberOfPages): ?>
         <a class="btn btn-primary" href="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>?pag=<?= htmlspecialchars($cervezas->currentPage + 1) ?>">Siguiente</a>
       <?php else: ?>
