@@ -1,6 +1,5 @@
-<?php 
-
-$aux = 0;
+<?php
+/* Si hemos recibido el número de página por GET lo usamos */
 if (empty($_GET['pag']) === false) {
     $pagina_actual = intval($_GET['pag']);
 } else {
